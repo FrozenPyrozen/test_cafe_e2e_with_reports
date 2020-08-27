@@ -1,9 +1,8 @@
 {
-
     "scripts": {
-        "test": "testcafe chrome:headless tests/visualTesting.js -s src/images --take-snapshot base"
+        "test:base": "testcafe chrome:headless tests/visualTesting.js -s src/images --take-snapshot base",
+        "test:actual": "testcafe chrome:headless tests/visualTesting.js -s src/images --take-snapshot actual"
     },
-
     "dependencies": {
         "testcafe": "1.9.1",
         "testcafe-blink-diff": "^0.4.6"

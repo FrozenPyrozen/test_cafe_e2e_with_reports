@@ -2,7 +2,7 @@ import { takeSnapshot } from 'testcafe-blink-diff';
 import { Selector, t, ClientFunction} from 'testcafe';
 
 fixture('Snapshots')
-  .page('https://www.google.co.cr/');
+  .page('https://www.google.com/');
 
 
 let testName = '';
@@ -27,8 +27,9 @@ test('Google Testing after search - Var 1', async t => {
     //The snapshot will be taken in full page
 
     await t.resizeWindow(1600,1000);
+    await t.wait(4000);
 
-    await takeSnapshot(t, `${testName} - Breakpoint 1`, {
+    await takeSnapshot(t, testName , {
         fullPage: false, 
         timeout:2000
     });
@@ -36,7 +37,7 @@ test('Google Testing after search - Var 1', async t => {
 
   });
 
-  test('Google Testing after search - Car 2', async t => {
+  test('Google Testing after search - Var 2', async t => {
   
     //How to get the test name assigned in a variable
     testName = t.testRun.test.name;
@@ -52,9 +53,10 @@ test('Google Testing after search - Var 1', async t => {
     //The snapshot will be taken in full page
 
     await t.resizeWindow(900,1000);
+    await t.wait(5000);
 
-    await takeSnapshot(t, `${testName} - Breakpoint 2`, {
-        fullPage: false, 
+    await takeSnapshot(t, testName, {
+        fullPage: true, 
         timeout:2000
     });
 
