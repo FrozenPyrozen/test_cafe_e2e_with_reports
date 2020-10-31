@@ -3,7 +3,8 @@
         "test:base": "testcafe chrome:headless tests/visualTesting.js -s src/images --take-snapshot base",
         "test:actual": "testcafe chrome:headless tests/visualTesting.js -s src/images --take-snapshot actual",
         "test:multiple-window": "testcafe chrome tests/Multiple_Window/*.js --skip-js-errors",
-        "test:assertions": "testcafe chrome tests/Assertion_Api/*.js --skip-js-errors"
+        "test:assertions": "testcafe chrome tests/Assertion_Api/*.js --skip-js-errors",
+        "test:data-driven": "testcafe chrome tests/DataDrivenTest/*.js --skip-js-errors"
     },
     "dependencies": {
         "testcafe": "1.9.1",
