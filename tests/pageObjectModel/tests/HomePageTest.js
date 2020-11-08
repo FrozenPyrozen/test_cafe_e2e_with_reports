@@ -16,18 +16,11 @@ fixture('Home Page')
 });
 
 
-test('Loading Login Page', async t => {
-
-    await t
-    .expect(getUrl()).eql(homeUrl)
-    .expect(HomePage.logoutBtn.exists).ok();
-
-});
 
 test('Succesfully Logout', async t => {
 
-    await t
-    .click(HomePage.logoutBtn);
+    HomePage.clickLogoutButton();
+    await t.wait(5000);
 
     responseCardText = await LoginPage.responseCard.innerText;
 
