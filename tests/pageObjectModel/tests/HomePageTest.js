@@ -15,7 +15,13 @@ fixture('Home Page')
     await LoginPage.clickLoginButton();
 });
 
+test('Loading Home Page', async t => {
 
+    await t
+    .expect(getUrl()).eql(homeUrl)
+    .expect(HomePage.logoutBtn.exists).ok();
+
+});
 
 test('Succesfully Logout', async t => {
 
