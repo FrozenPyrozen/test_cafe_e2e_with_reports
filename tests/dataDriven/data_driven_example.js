@@ -1,28 +1,26 @@
-//Imports
-import { Selector, t, ClientFunction} from 'testcafe';
+import {Selector, t, ClientFunction} from 'testcafe';
 
-//Required
 const dataSet = require('../../data/data.json');
 
-//Global Variables
-const getURL = ClientFunction(() => window.location);
+const getUrl = ClientFunction(()=> window.location);
 
-fixture('Data Driven Test Demo')
+fixture('JSON - Data Driven Demo')
+.skip
 
+dataSet.forEach(data => {
 
-dataSet.forEach(data =>{
-    console.log(data)
-    test.page('http://the-internet.herokuapp.com/login')
-    (`Login Page - ${data.expectedResult} `, async t => {
+    test
+    .page("http://the-internet.herokuapp.com/login")
+    (`Login Page Validation - ${data.expectedMessage}`, async t => {
 
         await t
         .maximizeWindow()
-        .typeText(Selector('input#username'), data.username)
+        .typeText(Selector('input#username'), data.userName)
         .typeText(Selector('input#password'), data.password)
-        .click('button')
+        .click('button');
 
-        t.expect(Selector("div#flash").innerText, data.expectedResult)
-        
+        await t.expect(Selector('div#flash').innerText).contains(data.expectedMessage);
 
-    })
+    });
+
 });

@@ -1,15 +1,20 @@
 [
     {
-        "username": "tomsmith",
+        "userName": "tomsmith",
         "password": "SuperSecretPassword!",
-        "expectedResult": "You logged into a secure area!"
-                
+        "expectedMessage": "You logged into a secure area!"
     },
 
     {
-        "username": "test User",
-        "password": "Test Password",
-        "expectedResult": "Your username is invalid!"
+        "userName": "joanMedia",
+        "password": "SuperSecretPassword!",
+        "expectedMessage": "Your username is invalid!"
+    },
 
+
+    {
+        "userName": "tomsmith",
+        "password": "test",
+        "expectedMessage": "Your password is invalid!"
     }
 ]

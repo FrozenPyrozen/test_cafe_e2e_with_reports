@@ -1,17 +1,16 @@
-import {Selector, t} from 'testcafe';
+import {Selector, t} from 'testcafe'
 
 class HomePage{
 
     constructor(){
-        this.logoutBtn = Selector('a.secondary');
-        this.responseCard = Selector('div#flash');
-    };
+        this.logoutBtn = Selector('a.button');
+        this.responseCard = Selector('div#flash')
+    }
 
-
-    async clickLogoutButton (){
+    async clickOnLogoutButton(){
         await t
         .click(this.logoutBtn);
-    };
+    }
 
 }
 

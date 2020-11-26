@@ -4,10 +4,11 @@
         "test:actual": "testcafe chrome:headless tests/visualDiff.js -s src/images --take-snapshot actual",
         "test:multiple-window": "testcafe chrome tests/manageWindows/*.js --skip-js-errors",
         "test:assertions": "testcafe chrome tests/assertions/*.js --skip-js-errors",
-        "test:data-driven": "testcafe chrome tests/dataDriven/*.js --skip-js-errors",
+        "test:dataDriven": "testcafe chrome tests/dataDriven/*.js --skip-js-errors",
         "test:pom": "testcafe chrome tests/pageObjectModel/tests/*.js --skip-js-errors"
     },
     "dependencies": {
+        "node-xlsx": "^0.15.0",
         "testcafe": "1.9.1",
         "testcafe-blink-diff": "^0.4.6"
     }
