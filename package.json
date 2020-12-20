@@ -5,7 +5,8 @@
         "test:multiple-window": "testcafe chrome tests/manageWindows/*.js --skip-js-errors",
         "test:assertions": "testcafe chrome tests/assertions/*.js --skip-js-errors",
         "test:dataDriven": "testcafe chrome tests/dataDriven/*.js --skip-js-errors",
-        "test:pom": "testcafe chrome tests/pageObjectModel/tests/*.js --skip-js-errors"
+        "test:pom": "testcafe chrome tests/pageObjectModel/tests/*.js --skip-js-errors",
+        "test:runByScript": "testcafe chrome tests/runner/*.js -L"
     },
     "dependencies": {
         "node-xlsx": "^0.15.0",
