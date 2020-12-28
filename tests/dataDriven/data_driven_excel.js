@@ -16,7 +16,7 @@ const dataSet = excelSheetData.map((row) => {
 
 });
 
-fixture('Excel - Data Driven Demo')
+fixture.skip('Excel - Data Driven Demo')
 
 dataSet.forEach(data => {
 

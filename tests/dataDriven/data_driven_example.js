@@ -5,7 +5,6 @@ const dataSet = require('../../data/data.json');
 const getUrl = ClientFunction(()=> window.location);
 
 fixture('JSON - Data Driven Demo')
-.skip
 
 dataSet.forEach(data => {
 
@@ -17,7 +16,11 @@ dataSet.forEach(data => {
         .maximizeWindow()
         .typeText(Selector('input#username'), data.userName)
         .typeText(Selector('input#password'), data.password)
-        .click('button');
+        .click('button')
+        .takeScreenshot({
+            path: `Test_Screenshots/${data.expectedMessage}.png`,
+            fullPage: true
+        });
 
         await t.expect(Selector('div#flash').innerText).contains(data.expectedMessage);
 

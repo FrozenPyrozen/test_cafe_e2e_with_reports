@@ -4,11 +4,12 @@
         "test:actual": "testcafe chrome:headless tests/visualDiff.js -s src/images --take-snapshot actual",
         "test:multiple-window": "testcafe chrome tests/manageWindows/*.js --skip-js-errors",
         "test:assertions": "testcafe chrome tests/assertions/*.js --skip-js-errors",
-        "test:dataDriven": "testcafe chrome tests/dataDriven/*.js --skip-js-errors",
+        "test:dataDriven": "testcafe chrome tests/dataDriven/*.js --video src/videos --video-options failedOnly=true --skip-js-errors",
         "test:pom": "testcafe chrome tests/pageObjectModel/tests/*.js --skip-js-errors",
         "test:runByScript": "testcafe chrome tests/runner/*.js -L"
     },
     "dependencies": {
+        "@ffmpeg-installer/ffmpeg": "^1.0.20",
         "node-xlsx": "^0.15.0",
         "testcafe": "1.9.1",
         "testcafe-blink-diff": "^0.4.6"

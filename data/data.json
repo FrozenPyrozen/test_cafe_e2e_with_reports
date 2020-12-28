@@ -1,7 +1,7 @@
 [
     {
         "userName": "tomsmith",
-        "password": "SuperSecretPassword!",
+        "password": "SuperSecretPassword!s",
         "expectedMessage": "You logged into a secure area!"
     },
 
