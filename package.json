@@ -6,7 +6,8 @@
         "test:assertions": "testcafe chrome tests/assertions/*.js --skip-js-errors",
         "test:dataDriven": "testcafe chrome tests/dataDriven/*.js --video src/videos --video-options failedOnly=true --skip-js-errors",
         "test:pom": "testcafe chrome tests/pageObjectModel/tests/*.js --skip-js-errors",
-        "test:runByScript": "testcafe chrome tests/runner/*.js -L"
+        "test:runByScript": "testcafe chrome tests/runner/*.js -L",
+        "test:configurationFile": "testcafe"
     },
     "dependencies": {
         "@ffmpeg-installer/ffmpeg": "^1.0.20",
