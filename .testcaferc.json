@@ -8,10 +8,10 @@
     },
     "videoPath": "./configuration_file/videos/",
     "skipJsErrors": true, 
-    "concurrency": 2,
+    "concurrency": 1,
     "selectorTimeOut": 5000,
     "assertionTimeOut": 5000,
     "pageLoadTimeOut": 5000,
-    "speed": 0.5
+    "speed": 1
 
 } 

@@ -1,0 +1,296 @@
+[
+  {
+    "description": "Home Page",
+    "elements": [
+      {
+        "id": "ScenarioLoading Home Page",
+        "keyword": "Scenario",
+        "line": 0,
+        "name": "Loading Home Page",
+        "skipped": false,
+        "sourceLine": "undefined",
+        "status": "passed",
+        "steps": [
+          {
+            "hidden": false,
+            "keyword": ">",
+            "match": {
+              "location": "C:\\Users\\Joan Esquivel\\Documents\\testcafe-tutorial\\tests\\pageObjectModel\\tests\\HomeTests.js:1:0"
+            },
+            "name": "Loading Home Page",
+            "result": {
+              "duration": 11835,
+              "status": "passed"
+            },
+            "tags": [],
+            "text": [
+              "<a href=\"#\">Loading Home Page</a>"
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario",
+        "uri": ""
+      },
+      {
+        "id": "ScenarioSuccessfully Logout",
+        "keyword": "Scenario",
+        "line": 0,
+        "name": "Successfully Logout",
+        "skipped": false,
+        "sourceLine": "undefined",
+        "status": "passed",
+        "steps": [
+          {
+            "hidden": false,
+            "keyword": ">",
+            "match": {
+              "location": "C:\\Users\\Joan Esquivel\\Documents\\testcafe-tutorial\\tests\\pageObjectModel\\tests\\HomeTests.js:1:0"
+            },
+            "name": "Successfully Logout",
+            "result": {
+              "duration": 14238,
+              "status": "passed"
+            },
+            "tags": [],
+            "text": [
+              "<a href=\"#\">Successfully Logout</a>"
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario",
+        "uri": ""
+      }
+    ],
+    "id": "Home Page",
+    "keyword": "Feature",
+    "line": 0,
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "88.0.4324.104"
+      },
+      "device": "Windows",
+      "platform": {
+        "name": "windows",
+        "version": "10"
+      },
+      "reportTime": "2021-02-01T00:40:03.862Z",
+      "startTime": "2021-02-01T00:39:22.185Z"
+    },
+    "name": "Home Page",
+    "skipped": false,
+    "tags": [
+      {
+        "line": 0,
+        "name": "@successfully"
+      },
+      {
+        "line": 0,
+        "name": "@logout"
+      },
+      {
+        "line": 0,
+        "name": "@loading"
+      },
+      {
+        "line": 0,
+        "name": "@home"
+      },
+      {
+        "line": 0,
+        "name": "@page"
+      }
+    ],
+    "uri": "C:\\Users\\Joan Esquivel\\Documents\\testcafe-tutorial\\tests\\pageObjectModel\\tests\\HomeTests.js:1"
+  },
+  {
+    "description": "Login Page",
+    "elements": [
+      {
+        "id": "ScenarioLoading Login Page",
+        "keyword": "Scenario",
+        "line": 0,
+        "name": "Loading Login Page",
+        "skipped": false,
+        "sourceLine": "undefined",
+        "status": "passed",
+        "steps": [
+          {
+            "hidden": false,
+            "keyword": ">",
+            "match": {
+              "location": "C:\\Users\\Joan Esquivel\\Documents\\testcafe-tutorial\\tests\\pageObjectModel\\tests\\LoginTests.js:1:0"
+            },
+            "name": "Loading Login Page",
+            "result": {
+              "duration": 1914,
+              "status": "passed"
+            },
+            "tags": [],
+            "text": [
+              "<a href=\"#\">Loading Login Page</a>"
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario",
+        "uri": ""
+      },
+      {
+        "id": "ScenarioFORM - Successfully Login",
+        "keyword": "Scenario",
+        "line": 0,
+        "name": "FORM - Successfully Login",
+        "skipped": false,
+        "sourceLine": "undefined",
+        "status": "passed",
+        "steps": [
+          {
+            "hidden": false,
+            "keyword": ">",
+            "match": {
+              "location": "C:\\Users\\Joan Esquivel\\Documents\\testcafe-tutorial\\tests\\pageObjectModel\\tests\\LoginTests.js:1:0"
+            },
+            "name": "FORM - Successfully Login",
+            "result": {
+              "duration": 3347,
+              "status": "passed"
+            },
+            "tags": [],
+            "text": [
+              "<a href=\"#\">FORM - Successfully Login</a>"
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario",
+        "uri": ""
+      },
+      {
+        "id": "ScenarioFORM - Invalid Username",
+        "keyword": "Scenario",
+        "line": 0,
+        "name": "FORM - Invalid Username",
+        "skipped": false,
+        "sourceLine": "undefined",
+        "status": "passed",
+        "steps": [
+          {
+            "hidden": false,
+            "keyword": ">",
+            "match": {
+              "location": "C:\\Users\\Joan Esquivel\\Documents\\testcafe-tutorial\\tests\\pageObjectModel\\tests\\LoginTests.js:1:0"
+            },
+            "name": "FORM - Invalid Username",
+            "result": {
+              "duration": 3418,
+              "status": "passed"
+            },
+            "tags": [],
+            "text": [
+              "<a href=\"#\">FORM - Invalid Username</a>"
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario",
+        "uri": ""
+      },
+      {
+        "id": "ScenarioFORM - Invalid Password",
+        "keyword": "Scenario",
+        "line": 0,
+        "name": "FORM - Invalid Password",
+        "skipped": false,
+        "sourceLine": "undefined",
+        "status": "passed",
+        "steps": [
+          {
+            "hidden": false,
+            "keyword": ">",
+            "match": {
+              "location": "C:\\Users\\Joan Esquivel\\Documents\\testcafe-tutorial\\tests\\pageObjectModel\\tests\\LoginTests.js:1:0"
+            },
+            "name": "FORM - Invalid Password",
+            "result": {
+              "duration": 3817,
+              "status": "passed"
+            },
+            "tags": [],
+            "text": [
+              "<a href=\"#\">FORM - Invalid Password</a>"
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario",
+        "uri": ""
+      }
+    ],
+    "id": "Login Page",
+    "keyword": "Feature",
+    "line": 0,
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "88.0.4324.104"
+      },
+      "device": "Windows",
+      "platform": {
+        "name": "windows",
+        "version": "10"
+      },
+      "reportTime": "2021-02-01T00:40:03.862Z",
+      "startTime": "2021-02-01T00:39:22.185Z"
+    },
+    "name": "Login Page",
+    "runInfo": {
+      "endTime": "2021-02-01T00:40:03.861Z",
+      "passed": 6,
+      "startTime": "2021-02-01T00:39:22.185Z",
+      "testCount": 6,
+      "userAgents": [
+        "Chrome 88.0.4324.104 / Windows 10"
+      ],
+      "warnings": []
+    },
+    "skipped": false,
+    "tags": [
+      {
+        "line": 0,
+        "name": "@form"
+      },
+      {
+        "line": 0,
+        "name": "@invalid"
+      },
+      {
+        "line": 0,
+        "name": "@password"
+      },
+      {
+        "line": 0,
+        "name": "@username"
+      },
+      {
+        "line": 0,
+        "name": "@successfully"
+      },
+      {
+        "line": 0,
+        "name": "@login"
+      },
+      {
+        "line": 0,
+        "name": "@loading"
+      },
+      {
+        "line": 0,
+        "name": "@page"
+      }
+    ],
+    "uri": "C:\\Users\\Joan Esquivel\\Documents\\testcafe-tutorial\\tests\\pageObjectModel\\tests\\LoginTests.js:1"
+  }
+]
