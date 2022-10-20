@@ -1,29 +1,28 @@
-import {Selector, t, ClientFunction} from 'testcafe';
+import { Selector, t, ClientFunction } from "testcafe";
 
-const dataSet = require('../../data/data.json');
+const dataSet = require("../../data/data.json");
 
-const getUrl = ClientFunction(()=> window.location);
+const getUrl = ClientFunction(() => window.location);
 
-fixture('JSON - Data Driven Demo')
+fixture("JSON - Data Driven Demo");
 
-dataSet.forEach(data => {
-
-    test
-    .page("http://the-internet.herokuapp.com/login")
-    (`Login Page Validation - ${data.expectedMessage}`, async t => {
-
-        await t
+dataSet.forEach((data) => {
+  test.page("http://the-internet.herokuapp.com/login")(
+    `Login Page Validation - ${data.expectedMessage}`,
+    async (t) => {
+      await t
         .maximizeWindow()
-        .typeText(Selector('input#username'), data.userName)
-        .typeText(Selector('input#password'), data.password)
-        .click('button')
+        .typeText(Selector("input#username"), data.userName)
+        .typeText(Selector("input#password"), data.password)
+        .click("button")
         .takeScreenshot({
-            path: `Test_Screenshots/${data.expectedMessage}.png`,
-            fullPage: true
+          path: `Test_Screenshots/${data.expectedMessage}.png`,
+          fullPage: true,
         });
 
-        await t.expect(Selector('div#flash').innerText).contains(data.expectedMessage);
-
-    });
-
+      await t
+        .expect(Selector("div#flash").innerText)
+        .contains(data.expectedMessage);
+    }
+  );
 });

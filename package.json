@@ -1,23 +1,23 @@
 {
-    "scripts": {
-        "test:base": "testcafe chrome:headless tests/visualDiff.js -s src/images --take-snapshot base",
-        "test:actual": "testcafe chrome:headless tests/visualDiff.js -s src/images --take-snapshot actual",
-        "test:multiple-window": "testcafe chrome tests/manageWindows/*.js --skip-js-errors",
-        "test:assertions": "testcafe chrome tests/assertions/*.js --skip-js-errors",
-        "test:dataDriven": "testcafe chrome tests/dataDriven/*.js --video src/videos --video-options failedOnly=true --skip-js-errors",
-        "test:pom": "testcafe chrome tests/pageObjectModel/tests/*.js --skip-js-errors",
-        "test:runByScript": "testcafe chrome tests/runner/*.js -L",
-        "test:configurationFile": "testcafe",
-        "test:reports": "testcafe chrome tests/pageObjectModel/tests/*.js --skips-js-errors --reporter cucumber-json --reporter-json-folder=reports/htmlReports/jsonReports",
-        "createReport": "node report-generator.js"
-    },
-    "dependencies": {
-        "@ffmpeg-installer/ffmpeg": "^1.0.20",
-        "multiple-cucumber-html-reporter": "^1.18.0",
-        "node-xlsx": "^0.15.0",
-        "testcafe": "1.9.1",
-        "testcafe-blink-diff": "^0.4.6",
-        "testcafe-reporter-cucumber-json": "^6.2.1",
-        "testcafe-reporter-html": "^1.4.6"
-    }
+  "scripts": {
+    "test:base": "testcafe chrome:headless tests/visualDiff/*.js -s src/images --take-snapshot base",
+    "test:actual": "testcafe chrome:headless tests/visualDiff/*.js -s src/images --take-snapshot actual",
+    "test:multiple-window": "testcafe chrome tests/manageWindows/*.js --skip-js-errors",
+    "test:assertions": "testcafe chrome tests/assertions/*.js --skip-js-errors",
+    "test:dataDriven": "testcafe chrome tests/dataDriven/*.js --video src/videos --video-options failedOnly=true --skip-js-errors",
+    "test:pom": "testcafe chrome tests/pageObjectModel/tests/*.js --skip-js-errors",
+    "test:runByScript": "testcafe chrome tests/runner/*.js -L",
+    "test:configurationFile": "testcafe",
+    "test:reports": "testcafe chrome tests/pageObjectModel/tests/*.js --skips-js-errors --reporter cucumber-json --reporter-json-folder=reports/htmlReports/jsonReports",
+    "createReport": "node report-generator.js"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "multiple-cucumber-html-reporter": "^1.18.0",
+    "node-xlsx": "^0.15.0",
+    "testcafe": "1.9.1",
+    "testcafe-blink-diff": "^0.4.6",
+    "testcafe-reporter-cucumber-json": "^6.2.1",
+    "testcafe-reporter-html": "^1.4.6"
+  }
 }
